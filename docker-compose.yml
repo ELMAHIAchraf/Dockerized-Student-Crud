@@ -1,0 +1,41 @@
+version: "3.8"
+services: 
+
+  client:
+    build:
+      context: ./Client 
+    container_name: client
+    working_dir: /src
+    command: npm start
+    depends_on:
+      - server
+    ports:
+      - "5173:5173"
+
+  server:
+    build:
+      context: ./Server 
+    container_name: server
+    working_dir: /app
+    command: ["node", "dist/server.js"]
+    environment:
+      - DB_HOST=mongo-db
+      - DB_PORT=27017
+      - DB_NAME=crudDB
+    depends_on:
+      - mongo-db
+    ports:
+      - "3000:3000"
+      
+  mongo-db:
+    image: mongo
+    container_name: mongo-db
+    ports:
+      - "27017:27017"
+    restart: always
+    volumes:
+      - db-data:/data/db
+
+volumes:
+  db-data: {}
+
