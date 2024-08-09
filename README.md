@@ -69,7 +69,7 @@ git clone https://github.com/ELMAHIAchraf/Dockerized-Student-Crud
 
 3. Navigate to the Project Directory:
 ```bash
-cd Mern CRUD
+cd Dockerized-Student-Crud
 ```
 
 5. Build and Run the Docker Containers:
