@@ -67,12 +67,12 @@ To get a local copy of the project up and running, follow these steps:
 git clone https://github.com/ELMAHIAchraf/Dockerized-Student-Crud
 ```
 
-3. Navigate to the Project Directory:
+2. Navigate to the Project Directory:
 ```bash
 cd Dockerized-Student-Crud
 ```
 
-5. Build and Run the Docker Containers:
+3. Build and Run the Docker Containers:
 
 ```bash
 docker-compose up --build
