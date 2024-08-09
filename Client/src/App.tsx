@@ -94,6 +94,7 @@ const App: React.FC = () => {
     const updatedStudent = students.map(student => student._id ===id ? response.data.student : student)    
     setStudents(updatedStudent)
     setIsUpdate(false)
+    messageApi.success(response.data.message);
    } catch (error) {
     messageApi.info('Failed to update student');
    }
