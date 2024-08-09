@@ -64,7 +64,7 @@ To get a local copy of the project up and running, follow these steps:
 
 1. Clone the Repository:
 ```bash
-git clone https://github.com/yourusername/your-repo.git
+git clone https://github.com/ELMAHIAchraf/Dockerized-Student-Crud
 ```
 
 3. Navigate to the Project Directory:
